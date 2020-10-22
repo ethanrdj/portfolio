@@ -1,0 +1,72 @@
+@import "../styles/variables.scss";
+
+.Projects {
+  color: $darkGrey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-projects {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-box {
+  padding: 5%;
+  height: 315px;
+  width: 300px;
+  background-color: $darkGrey;
+  color: whitesmoke;
+  position: relative;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: project-fade 1500ms forwards 0s linear;
+    .project-info {
+      visibility: visible;
+    }
+    .project-image {
+      opacity: 1%;
+      z-index: -1;
+    }
+  }
+}
+
+.project-image {
+  height: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+}
+
+.landscape {
+  width: 90%;
+  height: auto;
+  margin-top: 13.5%;
+}
+
+.project-info {
+  visibility: hidden;
+}
+
+.project-button {
+  margin: 5%;
+  width: 38%;
+  padding: 1%;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

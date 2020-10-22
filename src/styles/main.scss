@@ -1,0 +1,15 @@
+@import "./About.scss";
+@import "./variables.scss";
+@import "./Projects.scss";
+@import "./Contact.scss";
+
+@keyframes project-fade {
+  0% {
+    transform: rotate(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}

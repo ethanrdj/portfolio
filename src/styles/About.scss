@@ -1,0 +1,26 @@
+@import "../styles/variables.scss";
+
+.About {
+  text-align: center;
+  color: $darkGrey;
+}
+
+.ethan-pic {
+  border-radius: 50%;
+}
+
+.about-p {
+  background-color: $darkGrey;
+  color: whitesmoke;
+  padding: 1rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.About hr {
+  width: 80%;
+  padding: 1.7px;
+  margin-top: 6%;
+  background-color: $darkGrey;
+  border-radius: 5px;
+}
