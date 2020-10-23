@@ -5,11 +5,17 @@ import ron from "../images/ron.jpeg";
 import surreal from "../images/surreal.png";
 import nasa from "../images/nasa.png";
 import music from "../images/music.png";
+import { animateScroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
+  const handleScrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
   return (
-    <div className="Projects">
-      <h2>Projects</h2>
+    <div className="Projects" id="projects">
+      <h2 className="projects-header">Projects</h2>
       <div className="all-projects">
         <div className="project-box">
           <img className="project-image" src={sunny} alt="mc"></img>
@@ -26,11 +32,10 @@ const Projects = () => {
               <button className="project-button">Visit Site</button>
             </a>
             <a href="https://github.com/ethanrdj/sunny-ep-finder">
-              <button className="project-button">Visit Source</button>
+              <button className="project-button">Visit Code</button>
             </a>
           </div>
         </div>
-
         <div className="project-box">
           <img className="project-image" src={ron} alt="mc"></img>
           <div className="project-info">
@@ -45,11 +50,10 @@ const Projects = () => {
               <button className="project-button">Visit Site</button>
             </a>
             <a href="https://github.com/ethanrdj/ronswanson">
-              <button className="project-button">Visit Source</button>
+              <button className="project-button">Visit Code</button>
             </a>
           </div>
         </div>
-
         <div className="project-box">
           <img className="project-image" src={mc} alt="mc"></img>
           <div className="project-info">
@@ -66,11 +70,10 @@ const Projects = () => {
               <button className="project-button">Visit Site</button>
             </a>
             <a href="https://github.com/jbram-js/marvelous-cranes">
-              <button className="project-button">Visit Source</button>
+              <button className="project-button">Visit Code</button>
             </a>
           </div>
         </div>
-
         <div className="project-box">
           <img className="project-image landscape" src={surreal} alt="mc"></img>
           <div className="project-info">
@@ -82,11 +85,10 @@ const Projects = () => {
               site was built on React.
             </p>
             <a href="https://github.com/ethanrdj/surreal-estate">
-              <button className="project-button">Visit Source</button>
+              <button className="project-button">Visit Code</button>
             </a>
           </div>
         </div>
-
         <div className="project-box">
           <img className="project-image" src={nasa} alt="mc"></img>
           <div className="project-info">
@@ -98,27 +100,29 @@ const Projects = () => {
               display the results. The app was built on React.
             </p>
             <a href="https://github.com/ethanrdj/react-tech-test">
-              <button className="project-button">Visit Source</button>
+              <button className="project-button">Visit Code</button>
             </a>
           </div>
         </div>
-
         <div className="project-box">
           <img className="project-image landscape" src={music} alt="mc"></img>
           <div className="project-info">
             <h3 className="project-title">Music Library API</h3>
             <p className="project-para">
               This project created a CRUD API which allows you to store
-              information about artists, albums and songs. it was created used
-              Express, a MySQL database and Sequelize to create teh schemas.
+              information about artists, albums and songs. It was created using
+              Express, a MySQL database and Sequelize to create the schemas.
               Tests were written using Mocha and Chai.
             </p>
             <a href="https://github.com/ethanrdj/music-library-api-mysql">
-              <button className="project-button">Visit Source</button>
+              <button className="project-button">Visit Code</button>
             </a>
           </div>
         </div>
       </div>
+      <span className="scroll-button" onClick={() => handleScrollToTop()}>
+        <FontAwesomeIcon icon={faChevronCircleUp} size="2x" />
+      </span>
     </div>
   );
 };

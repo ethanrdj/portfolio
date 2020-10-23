@@ -5,16 +5,15 @@
   color: $darkGrey;
 }
 
-.ethan-pic {
-  border-radius: 50%;
-}
-
 .about-p {
   background-color: $darkGrey;
   color: whitesmoke;
   padding: 1rem;
   width: 85%;
   margin: 0 auto;
+  margin-top: 60%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.1em;
 }
 
 .About hr {
@@ -23,4 +22,60 @@
   margin-top: 6%;
   background-color: $darkGrey;
   border-radius: 5px;
+}
+
+@media (min-width: 450px) {
+  .about-p {
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 650px) {
+  .about-p {
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 450px) {
+  .about-p {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-p {
+    width: 75%;
+  }
+}
+
+@media (max-width: 650px) and (min-height: 890px) {
+  .about-p {
+    margin-top: 5%;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 650px) and (min-height: 890px) {
+  .about-p {
+    margin-top: 35%;
+    font-size: 1.3em;
+    padding: 3%;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 890px) {
+  .about-p {
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 1400px) and (min-height: 890px) {
+  .about-p {
+    margin-top: 21%;
+  }
+}
+@media (min-width: 1500px) and (min-height: 890px) {
+  .about-p {
+    margin-top: 16%;
+  }
 }

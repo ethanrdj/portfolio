@@ -1,0 +1,29 @@
+@import "../styles/variables.scss";
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: 10%;
+  margin-top: 3%;
+  color: $darkGrey;
+}
+
+.nav-items::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: $darkGrey;
+  transition: width 0.3s;
+}
+
+.nav-items:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}

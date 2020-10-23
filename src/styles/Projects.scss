@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .all-projects {
@@ -17,7 +18,13 @@
   width: 100%;
 }
 
+.projects-header {
+  font-size: 1.7em;
+}
+
 .project-box {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
   padding: 5%;
   height: 315px;
   width: 300px;
@@ -29,7 +36,7 @@
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
 
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -61,12 +68,31 @@
 }
 
 .project-button {
+  font-family: "Open Sans", sans-serif;
   margin: 5%;
+  margin-top: 10%;
   width: 38%;
   padding: 1%;
-  border-radius: 8px;
   border: none;
   font-size: 1.1em;
   font-weight: bold;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scroll-button {
+  cursor: pointer;
+  padding: 1%;
+}
+
+@media (min-width: 800px) {
+  .projects-header {
+    padding: 3%;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .Projects {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
