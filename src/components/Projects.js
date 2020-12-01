@@ -5,6 +5,7 @@ import ron from "../images/ron.jpeg";
 import surreal from "../images/surreal.png";
 import nasa from "../images/nasa.png";
 import music from "../images/music.png";
+import kys from "../images/kys.png";
 import { animateScroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
@@ -17,6 +18,23 @@ const Projects = () => {
     <div className="Projects" id="projects">
       <h2 className="projects-header">Projects</h2>
       <div className="all-projects">
+        <div className="project-box">
+          <img className="project-image landscape" src={kys} alt="mc"></img>
+          <div className="project-info">
+            <h3 className="project-title">KEEP YOUR SPACE</h3>
+            <p className="project-para">
+              I built this app using React and CSS and NASAs open APOD API. You
+              can see the Astronomical Picture Of The Day and learn about all of
+              the planets in our Solar System.
+            </p>
+            <a href="https://keep-your-space.vercel.app/">
+              <button className="project-button">Visit Site</button>
+            </a>
+            <a href="https://github.com/ethanrdj/astronomy-app">
+              <button className="project-button">Visit Code</button>
+            </a>
+          </div>
+        </div>
         <div className="project-box">
           <img className="project-image" src={sunny} alt="mc"></img>
           <div className="project-info">
