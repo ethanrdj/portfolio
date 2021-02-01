@@ -6,6 +6,7 @@ import surreal from "../images/surreal.png";
 import nasa from "../images/nasa.png";
 import music from "../images/music.png";
 import kys from "../images/kys.png";
+import authen from "../images/authen.png";
 import { animateScroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons";
@@ -18,6 +19,26 @@ const Projects = () => {
     <div className="Projects" id="projects">
       <h2 className="projects-header">Projects</h2>
       <div className="all-projects">
+        <div className="project-box">
+          <img
+            className="project-image landscape"
+            src={authen}
+            alt="authen"
+          ></img>
+          <div className="project-info">
+            <h3 className="project-title">Authentication App</h3>
+            <p className="project-para">
+              This project allows users to create an account and login. The
+              login process authenticates the users details and alerts them if
+              there is an error. The frontend is a build of React and SASS while
+              the backend is built with Express, MongoDB, Mongoose and Bcrypt to
+              hash the users password for added security.
+            </p>
+            <a href="https://github.com/ethanrdj/authentication">
+              <button className="project-button">Visit Code</button>
+            </a>
+          </div>
+        </div>
         <div className="project-box">
           <img className="project-image landscape" src={kys} alt="mc"></img>
           <div className="project-info">
