@@ -42,7 +42,6 @@ const Projects = () => {
         <div className="project-box">
           <img className="project-image landscape" src={kys} alt="mc"></img>
           <div className="project-info">
-            <h3 className="project-title">KEEP YOUR SPACE</h3>
             <p className="project-para">
               I built this app using React and CSS and NASAs open APOD API. You
               can see the Astronomical Picture Of The Day and learn about all of
