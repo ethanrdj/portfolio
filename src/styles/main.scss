@@ -1,23 +1,6 @@
+@import "./Home.scss";
 @import "./About.scss";
-@import "./variables.scss";
-@import "./Projects.scss";
-@import "./Contact.scss";
-@import "./NavBar.scss";
-@import "./Headers.scss";
+@import "./Navbar.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nunito+Sans&family=PT+Sans&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Noto+Sans+KR&family=Nunito+Sans&family=PT+Sans&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Nunito+Sans&family=Open+Sans&family=Slabo+27px&family=Yanone+Kaffeesatz&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-
-@keyframes project-fade {
-  0% {
-    transform: rotate(0);
-    opacity: 0.7;
-  }
-  100% {
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@600&display=swap");
