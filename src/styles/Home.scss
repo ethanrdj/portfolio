@@ -25,6 +25,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 1.5s ease-out;
+  user-select: none;
 }
 
 .home-headers:hover {
