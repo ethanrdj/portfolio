@@ -1,6 +1,5 @@
 import React from "react";
 import rocket from "../images/rocket.svg";
-import moon from "../images/moon.svg";
 
 const Loader = () => {
   return (
