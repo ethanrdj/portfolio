@@ -1,0 +1,168 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  background-color: #f0f0f0;
+}
+.main-projects-header {
+  font-family: $secondFont;
+  font-weight: lighter;
+  color: #919191;
+  text-transform: uppercase;
+  text-align: center;
+  width: 90%;
+  padding-bottom: 2%;
+  margin: 0 auto;
+  border-bottom: solid 3px #e8e8e8;
+  margin-bottom: 5%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  padding-bottom: 15%;
+}
+
+.laptop {
+  padding-top: 40%;
+  padding-bottom: 55%;
+}
+
+.indi-project-header {
+  font-family: $secondFont;
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: $blackText;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.screenshot {
+  height: auto;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.project-para {
+  width: 90%;
+  line-height: 1.4;
+  color: $blackText;
+  font-family: $textFont;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttons {
+  width: 220px;
+  border: $medTeal 1px solid;
+  text-align: center;
+  margin: 0 auto;
+  font-family: $textFont;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.view-code {
+  background-color: $medTeal;
+  color: white;
+}
+
+a.project-link:link {
+  text-decoration: none;
+  color: #000000b3;
+}
+a.project-link:active {
+  color: black;
+}
+
+a.site:visited {
+  color: #000000b3;
+}
+
+a.code:visited {
+  color: white;
+}
+
+a.site:hover {
+  color: black;
+}
+
+a.code:hover {
+  color: white;
+}
+
+.scroll-button {
+  color: $medTeal;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .project-para {
+    width: 75%;
+    margin-top: -75px;
+  }
+
+  .laptop {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .project-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+  }
+
+  .project-container.mobile {
+    margin-bottom: -10%;
+  }
+
+  .switch {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .indi-project-header {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .indi-project-header.mob {
+    width: 100%;
+    justify-self: center;
+    margin-bottom: -5%;
+  }
+
+  .screenshot {
+    align-self: center;
+    width: 50%;
+  }
+
+  .project-side {
+    align-self: center;
+    width: 50%;
+    margin-top: 10%;
+  }
+
+  .project-para {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .project-container {
+    width: 70%;
+  }
+}

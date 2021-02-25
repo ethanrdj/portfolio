@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,9 +16,44 @@ const Navbar = () => {
       </div>
 
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">About</li>
-        <li className="nav-item">Projects</li>
-        <li className="nav-item">Contact</li>
+        <Link
+          className="nav-item"
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onClick={() => setClicked(false)}
+        >
+          <li>About</li>
+        </Link>
+
+        <Link
+          className="nav-item"
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onClick={() => setClicked(false)}
+        >
+          <li>Projects</li>
+        </Link>
+
+        <Link
+          className="nav-item"
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onClick={() => setClicked(false)}
+        >
+          <li>Contact</li>
+        </Link>
       </ul>
     </nav>
   );

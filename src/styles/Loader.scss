@@ -1,0 +1,36 @@
+.Loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow-y: hidden;
+  z-index: 3;
+  background-color: $darkTeal;
+  display: flex;
+  justify-content: center;
+}
+.rocket-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.rocket {
+  position: relative;
+  align-self: flex-end;
+  transform: rotate(-45deg);
+  width: 80px;
+
+  animation-name: take-off;
+  animation-duration: 3200ms;
+  animation-direction: normal;
+}
+@keyframes take-off {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    margin-bottom: 95vh;
+  }
+}
