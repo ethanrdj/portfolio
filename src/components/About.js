@@ -72,10 +72,10 @@ const About = () => {
         </div>
         <div className="right">
           <p className="about-para">
-            I am a Business Management graduate who has always had a passion for
-            technology and with a love of being challenged and creative, I
-            decided to learn how to code and begin a career as a software
-            developer. I chose to join Manchester Codes Academy so I could be
+            I am a Business Management graduate who has always had a passion of
+            technology and a love of being challenged and creative, so with this
+            I decided to learn how to code and begin a career as a Software
+            Developer. I chose to join Manchester Codes Academy so I could be
             taught by real developers and learn the latest industry best
             practices in full-stack development.
             <br />
